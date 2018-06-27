@@ -635,7 +635,7 @@ body {
 .section-features {
   position: relative;
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(152, 255, 203, 0.7), rgba(29, 139, 102, 0.7)), url(../img/secondary.jpg);
+  background-image: linear-gradient(to right bottom, #98ffcb, #1d8b66);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem; }
