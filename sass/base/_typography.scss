@@ -50,12 +50,9 @@ body {
 
 .heading-secondary {
     font-size: 2.5rem;
-    text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
-    background-image: linear-gradient(to right, $color-primary, $color-primary-dark);
-    -webkit-background-clip: text;
-    color: transparent;
+    color: $font-color;
     letter-spacing: .2rem;
     transition: all .2s;
 
@@ -72,9 +69,7 @@ body {
         text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
     }
        
-    &--white {
-        background-image: linear-gradient(to right, $color-grey-light-1, $color-grey-light-2);
-    }
+
 }
 
 
@@ -82,7 +77,6 @@ body {
 .heading-tertiary {
     font-size: $default-font-size;
     font-weight: 700;
-    text-transform: uppercase;
 }
 
 .paragraph {
