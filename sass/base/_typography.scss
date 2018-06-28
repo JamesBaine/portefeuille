@@ -73,6 +73,20 @@ body {
 }
 
 
+.header__logo {
+    font-weight: bolder;
+    
+    &__name {
+        color: $font-color;
+        font-size: 2rem;       
+    }
+
+    &__title {
+        color: $color-secondary;
+        font-size: 1.25rem;
+    }
+}
+
 
 .heading-tertiary {
     font-size: $default-font-size;
