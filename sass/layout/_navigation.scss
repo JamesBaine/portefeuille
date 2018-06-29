@@ -1,9 +1,51 @@
+.main-nav {
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    z-index: 2000;
+    cursor: pointer;
+
+
+    @include respond(tab-port) {
+        display: none;
+    }    
+
+    &__list {
+        list-style: none;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: $font-color;
+            text-decoration: none;
+            transition: all .2s;
+            line-height: 1.4;
+
+            span {
+                margin-right: 1.5rem;
+                display: inline-block;
+            }
+        }
+        
+        &:hover,
+        &:active {
+            color: $color-secondary;
+        }
+    }
+      
+}
+
 .navburger {
     &__checkbox {
         display: none;
     }
 
     &__button {
+        display: none;
         background-color: $color-white;
         height: 7rem;
         width: 7rem;
@@ -19,6 +61,7 @@
         @include respond(tab-port) {
             top: 4rem;
             right: 4rem;
+            display: block;
         }
 
         @include respond(phone) {
@@ -28,6 +71,7 @@
     }
 
     &__background {
+        display: none;
         height: 6rem;
         width: 6rem;
         border-radius: 50%;
@@ -41,6 +85,7 @@
         @include respond(tab-port) {
             top: 4.5rem;
             right: 4.5rem;
+            display: block;
         }
 
         @include respond(phone) {

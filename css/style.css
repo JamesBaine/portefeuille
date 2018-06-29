@@ -515,10 +515,36 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
 
+.main-nav {
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  z-index: 2000;
+  cursor: pointer; }
+  @media only screen and (max-width: 56.25em) {
+    .main-nav {
+      display: none; } }
+  .main-nav__list {
+    list-style: none; }
+  .main-nav__link:link, .main-nav__link:visited {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #767676;
+    text-decoration: none;
+    transition: all .2s;
+    line-height: 1.4; }
+    .main-nav__link:link span, .main-nav__link:visited span {
+      margin-right: 1.5rem;
+      display: inline-block; }
+  .main-nav__link:hover, .main-nav__link:active {
+    color: #8277FF; }
+
 .navburger__checkbox {
   display: none; }
 
 .navburger__button {
+  display: none;
   background-color: #fff;
   height: 7rem;
   width: 7rem;
@@ -533,13 +559,15 @@ body {
   @media only screen and (max-width: 56.25em) {
     .navburger__button {
       top: 4rem;
-      right: 4rem; } }
+      right: 4rem;
+      display: block; } }
   @media only screen and (max-width: 37.5em) {
     .navburger__button {
       top: 3rem;
       right: 3rem; } }
 
 .navburger__background {
+  display: none;
   height: 6rem;
   width: 6rem;
   border-radius: 50%;
@@ -552,7 +580,8 @@ body {
   @media only screen and (max-width: 56.25em) {
     .navburger__background {
       top: 4.5rem;
-      right: 4.5rem; } }
+      right: 4.5rem;
+      display: block; } }
   @media only screen and (max-width: 37.5em) {
     .navburger__background {
       top: 3.5rem;
