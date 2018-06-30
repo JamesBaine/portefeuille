@@ -97,7 +97,8 @@ body {
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 1rem;
-        font-family: 5rem; } }
+        font-size: 3.5rem;
+        margin-top: 10rem; } }
   .heading-primary--accent {
     color: #8277FF; }
   .heading-primary--sub {
