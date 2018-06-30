@@ -350,7 +350,7 @@ body {
     font-size: 6rem;
     margin-bottom: .5rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #B0FAD5, #1d8b66);
+    background-image: linear-gradient(to right, #43e68c, #43e68c);
     -webkit-background-clip: text;
     color: transparent; }
     @media only screen and (max-width: 56.25em) {
