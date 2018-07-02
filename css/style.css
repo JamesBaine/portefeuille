@@ -69,7 +69,7 @@ body {
       padding: 0; } }
 
 ::selection {
-  background-color: #43e68c;
+  background-color: #43e6bd;
   color: #fff; }
 
 body {
@@ -99,14 +99,13 @@ body {
         letter-spacing: 1rem;
         font-size: 3.5rem;
         margin-top: 10rem; } }
-  .heading-primary--accent {
-    color: #8277FF; }
   .heading-primary--sub {
     display: block;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
-    letter-spacing: 1.75rem;
-    animation: moveInRight 1s ease-out; }
+    letter-spacing: 1rem;
+    animation: moveInRight 1s ease-out;
+    color: #8277FF; }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: .5rem; } }
@@ -125,7 +124,7 @@ body {
     .heading-secondary {
       font-size: 2.5rem; } }
   .heading-secondary:hover {
-    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    transform: scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .header__logo {
@@ -221,10 +220,10 @@ body {
     background-color: #8277FF; }
 
 .btn--green {
-  background-color: #43e68c;
+  background-color: #43e6bd;
   color: #8277FF; }
   .btn--green::after {
-    background-color: #43e68c; }
+    background-color: #43e6bd; }
 
 .btn::after {
   content: "";
@@ -272,7 +271,7 @@ body {
 
 .btn-text--grey:hover {
   background-color: #f7f7f7;
-  color: #43e68c;
+  color: #43e6bd;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
 
@@ -351,7 +350,7 @@ body {
     font-size: 6rem;
     margin-bottom: .5rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #43e68c, #43e68c);
+    background-image: linear-gradient(to right, #43e6bd, #43e6bd);
     -webkit-background-clip: text;
     color: transparent; }
     @media only screen and (max-width: 56.25em) {
@@ -459,7 +458,7 @@ body {
 
 .header {
   height: 85vh;
-  background-image: linear-gradient(to right bottom, #B0FAD5, #43e68c);
+  background-image: linear-gradient(to right bottom, #fff, #fff);
   background-size: cover;
   background-position: top;
   position: relative; }
@@ -470,7 +469,7 @@ body {
       height: 95vh; } }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
-      background-image: linear-gradient(to right bottom, #B0FAD5, #43e68c); } }
+      background-image: linear-gradient(to right bottom, #fff, #fff); } }
   @media only screen and (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -565,7 +564,7 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#B0FAD5, #43e68c);
+  background-image: radial-gradient(#b1fae8, #43e6bd);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
   @media only screen and (max-width: 56.25em) {
@@ -616,7 +615,7 @@ body {
 
 .navburger__link:hover, .navburger__link:active {
   background-position: 100%;
-  color: #43e68c;
+  color: #43e6bd;
   transform: translateX(1rem); }
 
 .navburger__checkbox:checked ~ .navburger__background {
@@ -662,7 +661,7 @@ body {
   transform: rotate(-135deg); }
 
 .section-about {
-  background-color: #f7f7f7;
+  background-image: linear-gradient(to right bottom, #b1fae8, #43e6bd);
   padding: 25rem 0;
   margin-top: -20vh; }
   @media only screen and (max-width: 56.25em) {
@@ -672,7 +671,7 @@ body {
 .section-features {
   position: relative;
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, #B0FAD5, #43e68c);
+  background-image: linear-gradient(to right bottom, #fff, #fff);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem; }
@@ -683,7 +682,9 @@ body {
       padding: 10rem 0; } }
 
 .section-tech {
-  padding: 25rem 0 10rem 0; }
+  background-image: linear-gradient(to right bottom, #b1fae8, #43e6bd);
+  padding: 25rem 0 10rem 0;
+  margin-top: -10rem; }
   .section-tech .tech-icon {
     width: 6rem;
     margin: 1.5rem; }

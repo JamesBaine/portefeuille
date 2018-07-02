@@ -32,21 +32,19 @@ body {
         */
     }
 
-    &--accent {
-        color: $color-secondary;
-    }
-    
     &--sub {
         display: block;
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: 700;
-        letter-spacing: 1.75rem;
+        letter-spacing: 1rem;
         animation: moveInRight 1s ease-out;
+        color: $color-secondary;
 
         @include respond(phone) {
             letter-spacing: .5rem;
         }
     }
+    
 }
 
 .heading-secondary {
@@ -66,7 +64,7 @@ body {
     }
 
     &:hover {
-        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        transform: scale(1.1);
         text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
     }
        
