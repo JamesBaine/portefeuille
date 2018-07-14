@@ -35,6 +35,10 @@
         &:active {
             color: $color-secondary;
         }
+
+        .active {
+            color: red;
+        }
     }
       
 }
